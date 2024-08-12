@@ -107,19 +107,6 @@ a:hover {
     width: 100%;
 }
 
-/* Styles for mobile screens */
-@media (max-width: 768px) {
-    /* Adjust the max-width value as needed */
-    #projects li {
-        flex-direction: column;
-        max-height: none;
-    }
-
-    #projects img {
-        max-width: fit-content;
-    }
-}
-
 #projects img {
     max-height: 300px;
     object-fit: cover;
@@ -183,4 +170,17 @@ a:hover {
     font-family: Agency FB, serif;
     font-size: medium;
     color: #e1e00;
+}
+
+/* Styles for mobile screens */
+@media (max-width: 768px) {
+    /* Adjust the max-width value as needed */
+    #projects li {
+        flex-direction: column;
+        max-height: none;
+    }
+
+    #projects img {
+        max-width: fit-content;
+    }
 }
