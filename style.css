@@ -73,6 +73,7 @@ a:hover {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+
 }
 
 #technologies li {
@@ -103,6 +104,7 @@ a:hover {
     background: antiquewhite;
     border-radius: 5px;
     padding: 10px;
+    width: 100%;
 }
 
 /* Styles for mobile screens */
@@ -111,6 +113,9 @@ a:hover {
         flex-direction: column;
         max-height: none;
         width: fit-content;
+    }
+    #projects img{
+        max-width: fit-content;
     }
 }
 
@@ -173,4 +178,8 @@ a:hover {
     padding: 12px 16px;
     border: none;
     width: 160px;
+    background-color: antiquewhite;
+    font-family: Agency FB;
+    font-size: medium;
+    color: #e1e00;
 }
