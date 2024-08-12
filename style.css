@@ -106,6 +106,8 @@ a:hover {
 @media (max-width: 768px) { /* Adjust the max-width value as needed */
     #projects li {
         flex-direction: column;
+        max-height: none;
+        width: fit-content;
     }
 }
 
