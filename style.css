@@ -1,0 +1,87 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: #444;
+}
+
+a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Container */
+#presentation, #technologies, #projects {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Presentation Section */
+#presentation img {
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+}
+
+#presentation h2 {
+    text-align: center;
+    font-size: 24px;
+}
+
+#presentation p {
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Technologies Section */
+#technologies ul {
+    list-style: none;
+    padding: 0;
+}
+
+#technologies li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+#technologies img {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+/* Projects Section */
+#projects ul {
+    list-style: none;
+    padding: 0;
+}
+
+#projects li {
+    margin-bottom: 20px;
+}
+
+#projects li a {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#projects p {
+    margin: 5px 0 0 0;
+    font-size: 16px;
+}
