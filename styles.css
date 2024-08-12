@@ -74,7 +74,7 @@ a:hover {
 }
 
 #projects li {
-    display: block;
+    display: inline-flex;
     align-items: flex-start;
     margin-bottom: 20px;
 }
