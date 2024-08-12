@@ -4,27 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js.js"></script>
+    <title>Projects Portfolio</title>
 </head>
 
-<body>
+<body onload="setLanguage('en')">
+<!-- Dropdown for Language Selection -->
+<div class="dropdown">
+    <button class="dropbtn">Language</button>
+    <div class="dropdown-content">
+        <a href="#" onclick="setLanguage('en')">English</a>
+        <a href="#" onclick="setLanguage('es')">Español</a>
+    </div>
+</div>
+
 <!-- Presentation Section -->
-<title>Projects Portfolio</title>
-<button>Language</button>
 <section id="presentation">
-    <h1>About me:</h1>
-    <h2>Mateo Rodríguez Palacios</h2>
+    <h1 id="about-me">About me:</h1>
+    <h2 id="name">Mateo Rodríguez Palacios</h2>
     <img src="assets/images/Photo.png" alt="Your Photo" width="150" height="150">
-    <p>Student | Backend Junior</p>
-    <p>National university of Colombia</p>
-    <p>Computer & systems engineering</p>
+    <p id="student">Student | Backend Junior</p>
+    <p id="university">National University of Colombia</p>
+    <p id="degree">Computer & Systems Engineering</p>
     <p><a href="https://github.com/matrodriguezpa">GitHub</a></p>
     <p><a href="assets/CV.pdf">CV</a></p>
 </section>
 
 <!-- Technologies Section -->
 <section id="technologies">
-    <h1>Technologies</h1>
+    <h1 id="technologies-title">Technologies</h1>
     <ul>
         <li><img src="assets/images/Java.png" alt="Java Logo" width="50" height="50"> Java</li>
         <li><img src="assets/images/Spring.png" alt="Spring Logo" width="50" height="50"> Spring</li>
@@ -36,49 +45,41 @@
 
 <!-- Projects Section -->
 <section id="projects">
-    <h1>Projects</h1>
+    <h1 id="projects-title">Projects</h1>
     <ul>
         <li>
             <img src="assets/images/AzulComics.png" alt="AzulComics Preview">
             <div>
-                <a href="https://github.com/matrodriguezpa/azul-comics">AZUL CÓMICS</a>
-                Spring web & MVC, MongoDB
-                <p><a href=azulcomics.com>azulcomics.com</a></p>
-                <p>es una plataforma web que permite a los usuarios registrarse y subir sus propios cómics para
-                    compartirlos con la comunidad.</p>
+                <a id="azul-comics" href="https://github.com/matrodriguezpa/azul-comics">AZUL COMICS</a>
+                <p id="azul-comics-desc">is a web platform that allows users to register and upload their own comics to share with the community.</p>
             </div>
         </li>
         <li>
-            <img src="assets/images/AzulComics.png" alt="Budget Buddy Desktop Preview">
+            <img src="assets/images/BudgetBuddyPC.png" alt="Budget Buddy Desktop Preview">
             <div>
-                <a href="https://github.com/matrodriguezpa/budget-buddy-desktop">BUDGET BUDDY | DESKTOP</a>
-                Java, JavaFX, Maven, PostgresSQL
-                <p>Aplicación de escritorio (windows) para gestionar su presupuesto doméstico, permitiendo realizar
-                    modificaciones en gastos, ingresos y el gasto planificado.</p>
+                <a id="budget-buddy-desktop" href="https://github.com/matrodriguezpa/budget-buddy-desktop">BUDGET BUDDY | DESKTOP</a>
+                <p id="budget-buddy-desktop-desc">Desktop application (Windows) for managing your household budget, allowing you to make modifications to expenses, income, and planned spending.</p>
             </div>
         </li>
         <li>
-            <img src="assets/images/AzulComics.png" alt="Budget Buddy Mobile Preview">
+            <img src="assets/images/BudgetBuddyMobile.png" alt="Budget Buddy Mobile Preview">
             <div>
-                <a href="https://github.com/matrodriguezpa/budget-buddy-mobile">BUDGET BUDDY | ANDROID</a>
-                Android SDK, Java, Gradle, PostgresSQL
-                <p>Versión para móviles (android) de Budget Buddy.</p>
+                <a id="budget-buddy-mobile" href="https://github.com/matrodriguezpa/budget-buddy-mobile">BUDGET BUDDY | ANDROID</a>
+                <p id="budget-buddy-mobile-desc">Mobile version (Android) of Budget Buddy.</p>
             </div>
         </li>
         <li>
-            <img src="assets/images/AzulComics.png" alt="Transportation System Preview">
+            <img src="assets/images/SAT.png" alt="Transportation System Preview">
             <div>
-                <a href="https://github.com/matrodriguezpa/sistema-administracion-transporte">SISTEMA DE TRANSPORTES</a>
-                Python, PyQt, SQLite
-                <p>A transportation admin system for clientes and sales of a bus company.</p>
+                <a id="transport-system" href="https://github.com/matrodriguezpa/sistema-administracion-transporte">TRANSPORTATION SYSTEM</a>
+                <p id="transport-system-desc">A transportation admin system for clients and sales of a bus company.</p>
             </div>
         </li>
         <li>
-            <img src="assets/images/AzulComics.png" alt="Expense Tracker Preview">
+            <img src="assets/images/BudgetBuddyPC.png.png" alt="Expense Tracker Preview">
             <div>
-                <a href="https://github.com/matrodriguezpa/receipt-manager">RECEIPT MANAGER</a>
-                Java, JSwing, Maven
-                <p>Java desktop application for tracking receipts and exporting them to an Excel.</p>
+                <a id="receipt-manager" href="https://github.com/matrodriguezpa/receipt-manager">RECEIPT MANAGER</a>
+                <p id="receipt-manager-desc">Java desktop application for tracking receipts and exporting them to an Excel file.</p>
             </div>
         </li>
     </ul>
