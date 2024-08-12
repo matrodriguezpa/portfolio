@@ -52,6 +52,7 @@ a:hover {
 #technologies ul {
     list-style: none;
     padding: 0;
+    display: flex;
 }
 
 #technologies li {
@@ -73,7 +74,21 @@ a:hover {
 }
 
 #projects li {
+    display: flex;
+    align-items: flex-start;
     margin-bottom: 20px;
+}
+
+#projects img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+#projects div {
+    max-width: 600px;
 }
 
 #projects li a {
