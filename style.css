@@ -100,6 +100,9 @@ a:hover {
     display: inline-flex;
     margin-bottom: 20px;
     justify-content: center;
+    background: antiquewhite;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 /* Styles for mobile screens */
@@ -112,7 +115,7 @@ a:hover {
 }
 
 #projects img {
-    max-height: 200px;
+    max-height: 300px;
     object-fit: cover;
     margin-right: 20px;
     border-radius: 8px;
