@@ -53,12 +53,14 @@ a:hover {
     list-style: none;
     padding: 0;
     display: flex;
+    justify-content: space-evenly;
 }
 
 #technologies li {
     display: flex;
-    align-items: center;
     margin: 10px 0;
+    flex-direction: column;
+    align-items: center;
 }
 
 #technologies img {
@@ -71,15 +73,12 @@ a:hover {
 #projects ul {
     list-style: none;
     padding: 0;
-    display: flex;
-    justify-content: space-around;
 }
 
 #projects li {
     display: flex;
-    margin: 10px 0;
-    flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    margin-bottom: 20px;
 }
 
 #projects img {
