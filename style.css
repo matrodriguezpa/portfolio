@@ -101,10 +101,9 @@ a:hover {
     display: inline-flex;
     margin-bottom: 20px;
     justify-content: center;
-    background: antiquewhite;
-    border-radius: 5px;
-    padding: 10px;
     width: 100%;
+    border-bottom: 1px solid sandybrown;
+    padding-bottom: 30px;
 }
 
 #projects img {
@@ -178,6 +177,7 @@ a:hover {
     #projects li {
         flex-direction: column;
         max-height: none;
+        ;
     }
 
     #projects img {
