@@ -2,7 +2,7 @@ function setLanguage(language) {
     const texts = {
         en: {
             language: "EN"
-            aboutMe: "About me:",
+            aboutMe: "About me",
             name: "Mateo Rodríguez Palacios",
             student: "Student | Backend Junior",
             university: "National University of Colombia",
@@ -22,7 +22,7 @@ function setLanguage(language) {
         },
         es: {
             language: "ES"
-            aboutMe: "Sobre mí:",
+            aboutMe: "Sobre mí",
             name: "Mateo Rodríguez Palacios",
             student: "Estudiante | Backend Junior",
             university: "Universidad Nacional de Colombia",

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Projects Portfolio</title>
 </head>
 
@@ -25,14 +25,14 @@
 
 <!-- Presentation Section -->
 <section id="presentation">
-    <h1 id="about-me">About me:</h1>
+    <h1 id="about-me">About me</h1>
     <h2 id="name">Mateo Rodríguez Palacios</h2>
     <img src="assets/images/Photo.png" alt="Your Photo" width="150" height="150">
     <p id="student">Student | Backend Junior</p>
     <p id="university">National University of Colombia</p>
     <p id="degree">Computer & Systems Engineering</p>
     <p><a href="https://github.com/matrodriguezpa">GitHub</a></p>
-    <p><a href="assets/CV.pdf">CV</a></p>
+    <p><a href="assets/HV_Mateo_Rodríguez_Palacios.pdf">CV</a></p>
 </section>
 
 <!-- Technologies Section -->
@@ -65,7 +65,6 @@
             </a>
         </li>
     </ul>
-
 </section>
 
 <!-- Projects Section -->
@@ -73,7 +72,7 @@
     <h1 id="projects-title">Projects</h1>
     <ul>
         <li>
-            <img src="assets/images/AzulComics.png" alt="AzulComics Preview">
+            <img src="assets/images/AzulComics.png" alt="AzulComics Preview" onclick="openModal('azul-comics')">
             <div>
                 <a id="azul-comics" href="https://github.com/matrodriguezpa/azul-comics">AZUL COMICS</a>
                 <p id="azul-comics-desc">is a web platform that allows users to register and upload their own comics to
@@ -81,7 +80,8 @@
             </div>
         </li>
         <li>
-            <img src="assets/images/BudgetBuddyPC.png" alt="Budget Buddy Desktop Preview">
+            <img src="assets/images/BudgetBuddyPC.png" alt="Budget Buddy Desktop Preview"
+                 onclick="openModal('budget-buddy-desktop')">
             <div>
                 <a id="budget-buddy-desktop" href="https://github.com/matrodriguezpa/budget-buddy-desktop">BUDGET BUDDY
                     | DESKTOP</a>
@@ -90,7 +90,8 @@
             </div>
         </li>
         <li>
-            <img src="assets/images/BudgetBuddyMobile.png" alt="Budget Buddy Mobile Preview">
+            <img src="assets/images/BudgetBuddyMobile.png" alt="Budget Buddy Mobile Preview"
+                 onclick="openModal('budget-buddy-mobile')">
             <div>
                 <a id="budget-buddy-mobile" href="https://github.com/matrodriguezpa/budget-buddy-mobile">BUDGET BUDDY |
                     ANDROID</a>
@@ -98,7 +99,8 @@
             </div>
         </li>
         <li>
-            <img src="assets/images/SAT.png" alt="Transportation System Preview">
+            <img src="assets/images/SAT.png" alt="Transportation System Preview"
+                 onclick="openModal('transport-system')">
             <div>
                 <a id="transport-system" href="https://github.com/matrodriguezpa/sistema-administracion-transporte">TRANSPORTATION
                     SYSTEM</a>
@@ -106,7 +108,8 @@
             </div>
         </li>
         <li>
-            <img src="assets/images/BudgetBuddyPC.png" alt="Expense Tracker Preview">
+            <img src="assets/images/ReceiptManager.png" alt="Receipt manager Preview"
+                 onclick="openModal('receipt-manager')">
             <div>
                 <a id="receipt-manager" href="https://github.com/matrodriguezpa/receipt-manager">RECEIPT MANAGER</a>
                 <p id="receipt-manager-desc">Java desktop application for tracking receipts and exporting them to an
