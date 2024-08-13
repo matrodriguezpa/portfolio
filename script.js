@@ -1,6 +1,7 @@
 function setLanguage(language) {
     const texts = {
         en: {
+            language: "EN"
             aboutMe: "About me:",
             name: "Mateo Rodríguez Palacios",
             student: "Student | Backend Junior",
@@ -20,6 +21,7 @@ function setLanguage(language) {
             receiptManagerDesc: "Java desktop application for tracking receipts and exporting them to an Excel file."
         },
         es: {
+            language: "ES"
             aboutMe: "Sobre mí:",
             name: "Mateo Rodríguez Palacios",
             student: "Estudiante | Backend Junior",
@@ -40,6 +42,7 @@ function setLanguage(language) {
         }
     };
 
+    document.getElementById("language").textContent = texts[language].language;
     document.getElementById("about-me").textContent = texts[language].aboutMe;
     document.getElementById("name").textContent = texts[language].name;
     document.getElementById("student").textContent = texts[language].student;

@@ -115,6 +115,7 @@ a:hover {
 
 #projects div {
     max-width: 600px;
+    text-align: center;
 }
 
 #projects li a {
@@ -137,7 +138,7 @@ a:hover {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+    min-width: 80px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
@@ -164,7 +165,7 @@ a:hover {
 .language {
     padding: 12px 16px;
     border: none;
-    width: 160px;
+    width: 80px;
     background-color: antiquewhite;
     font-family: Agency FB, serif;
     font-size: medium;
@@ -177,10 +178,13 @@ a:hover {
     #projects li {
         flex-direction: column;
         max-height: none;
-        ;
     }
 
     #projects img {
         max-width: fit-content;
+    }
+
+    #projects div {
+        text-align: center;
     }
 }
