@@ -1,3 +1,4 @@
+
 function setLanguage(language) {
     const texts = {
         en: {
