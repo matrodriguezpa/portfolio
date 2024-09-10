@@ -34,8 +34,6 @@ function setLanguage(language) {
             azulComicsDesc: "es una plataforma web que permite a los usuarios registrarse y subir sus propios cómics para compartirlos con la comunidad.",
             budgetBuddyDesktop: "BUDGET BUDDY | ESCRITORIO",
             budgetBuddyDesktopDesc: "Aplicación de escritorio (Windows) para gestionar su presupuesto doméstico, permitiendo realizar modificaciones en gastos, ingresos y el gasto planificado.",
-            budgetBuddyMobile: "BUDGET BUDDY | ANDROID",
-            budgetBuddyMobileDesc: "Versión para móviles (Android) de Budget Buddy.",
             transportSystem: "SISTEMA DE TRANSPORTE",
             transportSystemDesc: "Sistema de administración de transporte para clientes y ventas de una empresa de autobuses.",
             receiptManager: "GESTOR DE RECIBOS",
@@ -56,8 +54,6 @@ function setLanguage(language) {
     document.getElementById("azul-comics-desc").textContent = texts[language].azulComicsDesc;
     document.getElementById("budget-buddy-desktop").textContent = texts[language].budgetBuddyDesktop;
     document.getElementById("budget-buddy-desktop-desc").textContent = texts[language].budgetBuddyDesktopDesc;
-    document.getElementById("budget-buddy-mobile").textContent = texts[language].budgetBuddyMobile;
-    document.getElementById("budget-buddy-mobile-desc").textContent = texts[language].budgetBuddyMobileDesc;
     document.getElementById("transport-system").textContent = texts[language].transportSystem;
     document.getElementById("transport-system-desc").textContent = texts[language].transportSystemDesc;
     document.getElementById("receipt-manager").textContent = texts[language].receiptManager;
