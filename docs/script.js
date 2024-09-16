@@ -1,6 +1,7 @@
 function setLanguage(language) {
     const texts = {
         en: {
+            pageTitle: "Projects Portfolio",
             language: "EN",
             aboutMe: "About me",
             name: "Mateo Rodríguez Palacios",
@@ -18,6 +19,7 @@ function setLanguage(language) {
             promediosUNALDesc: "Mobile version (Android) of Budget Buddy.",
         },
         es: {
+            pageTitle: "Portafolio de proyectos",
             language: "ES",
             aboutMe: "Sobre mí",
             name: "Mateo Rodríguez Palacios",
@@ -37,6 +39,7 @@ function setLanguage(language) {
     };
 
     // Actualiza los textos en la página
+    document.getElementById("page-title").textContent = texts[language].pageTitle;
     document.getElementById("language").textContent = texts[language].language;
     document.getElementById("about-me").textContent = texts[language].aboutMe;
     document.getElementById("name").textContent = texts[language].name;
