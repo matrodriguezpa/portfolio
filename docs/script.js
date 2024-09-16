@@ -1,4 +1,3 @@
-
 function setLanguage(language) {
     const texts = {
         en: {
@@ -10,16 +9,13 @@ function setLanguage(language) {
             degree: "Computer & Systems Engineering",
             technologies: "Technologies",
             projects: "Projects",
-            azulComics: "AZUL COMICS",
+            repo:"Repo",
+            azulComics: "azulcomics.com",
             azulComicsDesc: "is a web platform that allows users to register and upload their own comics to share with the community.",
-            budgetBuddyDesktop: "BUDGET BUDDY | DESKTOP",
-            budgetBuddyDesktopDesc: "Desktop application (Windows) for managing your household budget, allowing you to make modifications to expenses, income, and planned spending.",
-            budgetBuddyMobile: "BUDGET BUDDY | ANDROID",
-            budgetBuddyMobileDesc: "Mobile version (Android) of Budget Buddy.",
-            transportSystem: "TRANSPORTATION SYSTEM",
-            transportSystemDesc: "A transportation admin system for clients and sales of a bus company.",
-            receiptManager: "RECEIPT MANAGER",
-            receiptManagerDesc: "Java desktop application for tracking receipts and exporting them to an Excel file."
+            oneSpencer: "onespencer",
+            oneSpencerDesc: "Desktop application (Windows) for managing your household budget, allowing you to make modifications to expenses, income, and planned spending.",
+            promediosUNAL: "promediosunal.github.io",
+            promediosUNALDesc: "Mobile version (Android) of Budget Buddy.",
         },
         es: {
             language: "ES",
@@ -30,14 +26,13 @@ function setLanguage(language) {
             degree: "Ingeniería de Sistemas y Computación",
             technologies: "Tecnologías",
             projects: "Proyectos",
-            azulComics: "AZUL CÓMICS",
-            azulComicsDesc: "es una plataforma web que permite a los usuarios registrarse y subir sus propios cómics para compartirlos con la comunidad.",
-            budgetBuddyDesktop: "BUDGET BUDDY | ESCRITORIO",
-            budgetBuddyDesktopDesc: "Aplicación de escritorio (Windows) para gestionar su presupuesto doméstico, permitiendo realizar modificaciones en gastos, ingresos y el gasto planificado.",
-            transportSystem: "SISTEMA DE TRANSPORTE",
-            transportSystemDesc: "Sistema de administración de transporte para clientes y ventas de una empresa de autobuses.",
-            receiptManager: "GESTOR DE RECIBOS",
-            receiptManagerDesc: "Aplicación de escritorio Java para rastrear recibos y exportarlos a un archivo de Excel."
+            repo:"Repositorio",
+            azulComics: "azulcomics.com",
+            azulComicsDesc: "is a web platform that allows users to register and upload their own comics to share with the community.",
+            oneSpencer: "onespencer",
+            oneSpencerDesc: "Desktop application (Windows) for managing your household budget, allowing you to make modifications to expenses, income, and planned spending.",
+            promediosUNAL: "promediosunal.github.io",
+            promediosUNALDesc: "Mobile version (Android) of Budget Buddy.",
         }
     };
 
@@ -50,12 +45,11 @@ function setLanguage(language) {
     document.getElementById("degree").textContent = texts[language].degree;
     document.getElementById("technologies-title").textContent = texts[language].technologies;
     document.getElementById("projects-title").textContent = texts[language].projects;
+    document.getElementById("respo").textContent = texts[language].repo;
     document.getElementById("azul-comics").textContent = texts[language].azulComics;
     document.getElementById("azul-comics-desc").textContent = texts[language].azulComicsDesc;
-    document.getElementById("budget-buddy-desktop").textContent = texts[language].budgetBuddyDesktop;
-    document.getElementById("budget-buddy-desktop-desc").textContent = texts[language].budgetBuddyDesktopDesc;
-    document.getElementById("transport-system").textContent = texts[language].transportSystem;
-    document.getElementById("transport-system-desc").textContent = texts[language].transportSystemDesc;
-    document.getElementById("receipt-manager").textContent = texts[language].receiptManager;
-    document.getElementById("receipt-manager-desc").textContent = texts[language].receiptManagerDesc;
+    document.getElementById("one-spencer").textContent = texts[language].oneSpencer;
+    document.getElementById("one-spencer-desc-desc").textContent = texts[language].oneSpencerDesc;
+    document.getElementById("promedios-unal").textContent = texts[language].promediosUNAL;
+    document.getElementById("promedios-unal-desc").textContent = texts[language].promediosUNALDesc;
 }

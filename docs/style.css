@@ -100,10 +100,10 @@ a:hover {
 #projects li {
     display: inline-flex;
     margin-bottom: 20px;
-    justify-content: center;
     width: 100%;
     border-bottom: 1px solid sandybrown;
     padding-bottom: 30px;
+    align-items: center;
 }
 
 #projects img {
@@ -181,6 +181,10 @@ a:hover {
     width: 100%;
 }
 
+#projects img{
+    max-width: 400px;
+}
+
 #technologies img:hover, #projects img:hover{
    filter: brightness(130%);
 }
@@ -195,6 +199,7 @@ a:hover {
 
     #projects img {
         max-width: fit-content;
+        width: 100%;
     }
 
     #projects div {
