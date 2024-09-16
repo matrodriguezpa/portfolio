@@ -45,11 +45,15 @@ function setLanguage(language) {
     document.getElementById("degree").textContent = texts[language].degree;
     document.getElementById("technologies-title").textContent = texts[language].technologies;
     document.getElementById("projects-title").textContent = texts[language].projects;
-    document.getElementById("respo").textContent = texts[language].repo;
     document.getElementById("azul-comics").textContent = texts[language].azulComics;
     document.getElementById("azul-comics-desc").textContent = texts[language].azulComicsDesc;
     document.getElementById("one-spencer").textContent = texts[language].oneSpencer;
-    document.getElementById("one-spencer-desc-desc").textContent = texts[language].oneSpencerDesc;
+    document.getElementById("one-spencer-desc").textContent = texts[language].oneSpencerDesc;
     document.getElementById("promedios-unal").textContent = texts[language].promediosUNAL;
     document.getElementById("promedios-unal-desc").textContent = texts[language].promediosUNALDesc;
+
+    const repoElements = document.getElementsByClassName("repo");
+    for (let i = 0; i < repoElements.length; i++) {
+        repoElements[i].textContent = texts[language].repo;
+    }
 }
