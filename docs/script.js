@@ -8,15 +8,16 @@ function setLanguage(language) {
             student: "Student | Backend Junior",
             university: "National University of Colombia",
             degree: "Computer & Systems Engineering",
+            personalDescription:"My name is Mateo. I'm familiar with building desktop and full-stack web applications using Spring, React, and AWS, MVC and layered architectures, REST APIs, and  relational databases.",
             technologies: "Technologies",
             projects: "Projects",
             repo:"Repo",
             azulComics: "azulcomics.com",
-            azulComicsDesc: "is a web platform that allows users to register and upload their own comics to share with the community.",
+            azulComicsDesc: "A comics website where users can read works by independent authors and publish their own. Made using React and Bootstrap for the frontend, with Spring and MySQL for the backend, and Hosted on AWS S3.",
             oneSpencer: "onespencer",
-            oneSpencerDesc: "Desktop application (Windows) for managing your household budget, allowing you to make modifications to expenses, income, and planned spending.",
+            oneSpencerDesc: "A desktop application for calculating taxes and exporting this data to Excel. Developed using Java, Maven, and SQLite for local data storage.",
             promediosUNAL: "promediosunal.github.io",
-            promediosUNALDesc: "Mobile version (Android) of Budget Buddy.",
+            promediosUNALDesc: "A website designed to help students calculate their grades, built with only JavaScript, CSS, and HTML.",
         },
         es: {
             pageTitle: "Portafolio de proyectos",
@@ -26,15 +27,16 @@ function setLanguage(language) {
             student: "Estudiante | Backend Junior",
             university: "Universidad Nacional de Colombia",
             degree: "Ingeniería de Sistemas y Computación",
+            personalDescription:"Me llamo Mateo. Estoy familiarizado con la creación de aplicaciones de escritorio usando Java y aplicaciones web fullstack utilizando Spring, React y AWS, así como arquitecturas MVC y en capas, APIs REST y bases de datos relacionales.",
             technologies: "Tecnologías",
             projects: "Proyectos",
             repo:"Repositorio",
             azulComics: "azulcomics.com",
-            azulComicsDesc: "is a web platform that allows users to register and upload their own comics to share with the community.",
+            azulComicsDesc: "Un sitio web de cómics donde los usuarios pueden leer obras de autores independientes y publicar las suyas. Hecho con React y Bootstrap para el frontend, y con Spring y MySQL para el backend, alojado en AWS S3.",
             oneSpencer: "onespencer",
-            oneSpencerDesc: "Desktop application (Windows) for managing your household budget, allowing you to make modifications to expenses, income, and planned spending.",
+            oneSpencerDesc: "Una aplicación de escritorio para calcular impuestos y exportar estos datos a Excel. Desarrollada con Java, Maven y SQLite para almacenamiento local de datos.",
             promediosUNAL: "promediosunal.github.io",
-            promediosUNALDesc: "Mobile version (Android) of Budget Buddy.",
+            promediosUNALDesc: "Un sitio web diseñado para ayudar a los estudiantes a calcular sus calificaciones, construido solo con JavaScript, CSS y HTML.",
         }
     };
 
@@ -46,6 +48,7 @@ function setLanguage(language) {
     document.getElementById("student").textContent = texts[language].student;
     document.getElementById("university").textContent = texts[language].university;
     document.getElementById("degree").textContent = texts[language].degree;
+    document.getElementById("personal-description").textContent = texts[language].personalDescription;
     document.getElementById("technologies-title").textContent = texts[language].technologies;
     document.getElementById("projects-title").textContent = texts[language].projects;
     document.getElementById("azul-comics").textContent = texts[language].azulComics;

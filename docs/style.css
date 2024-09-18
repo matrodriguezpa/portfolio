@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: Agency FB, sans-serif;
+    font-family: math;
     margin: 0;
     padding: 0;
     background-color: white;
@@ -25,8 +25,12 @@ a:hover {
     text-decoration: underline;
 }
 
+p{
+    max-width: 400px;
+}
+
 /* Container */
-#presentation, #technologies, #projects {
+#presentation, #technologies, #projects, #personal{
     margin: 20px auto;
     padding: 20px;
     max-width: 800px;
@@ -41,8 +45,16 @@ a:hover {
     margin: 15px;
 }
 
+
 #presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: antiquewhite;
+}
+
+#personal p{
+    display: contents;
 }
 
 #technologies, #projects {
@@ -63,7 +75,7 @@ a:hover {
 
 #presentation p {
     text-align: center;
-    font-size: 18px;
+    margin: 0 15px;
 }
 
 /* Technologies Section */
@@ -108,7 +120,6 @@ a:hover {
 
 #projects img {
     max-height: 300px;
-    margin-right: 20px;
     border-radius: 8px;
 }
 
@@ -119,12 +130,14 @@ a:hover {
 
 #projects li a {
     font-weight: bold;
+    margin-right: 15px;
     font-size: 18px;
 }
 
 #projects p {
-    margin: 5px 0 0 0;
+    margin: 15px 0;
     font-size: 16px;
+    text-align: justify;
 }
 
 /* Estilos para el menú desplegable */
