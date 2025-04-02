@@ -1,14 +1,14 @@
 function setLanguage(language) {
     const texts = {
         en: {
-            pageTitle: "Projects Portfolio",
+            pageTitle: "Personal Portfolio",
             language: "EN",
             aboutMe: "About me",
             name: "Mateo Rodríguez Palacios",
             student: "Student | Backend Junior",
             university: "National University of Colombia",
             degree: "Computer & Systems Engineering",
-            personalDescription:"My name is Mateo. I'm familiar with building desktop and full-stack web applications using Spring, React, and AWS, MVC and layered architectures, REST APIs, and  relational databases.",
+            personalDescription:"I'm familiar with building full-stack web applications with MVC and layered architectures, REST APIs, and relational databases using technologies like JavaScript, Spring Boot, Hibernate, and PostgreSQL.",
             technologies: "Technologies",
             projects: "Projects",
             repo:"Repo",
@@ -20,14 +20,14 @@ function setLanguage(language) {
             promediosUNALDesc: "A website designed to help students calculate their grades, built with only JavaScript, CSS, and HTML.",
         },
         es: {
-            pageTitle: "Portafolio de proyectos",
+            pageTitle: "Portafolio Personal",
             language: "ES",
             aboutMe: "Sobre mí",
             name: "Mateo Rodríguez Palacios",
             student: "Estudiante | Backend Junior",
             university: "Universidad Nacional de Colombia",
             degree: "Ingeniería de Sistemas y Computación",
-            personalDescription:"Me llamo Mateo. Estoy familiarizado con la creación de aplicaciones de escritorio usando Java y aplicaciones web fullstack utilizando Spring, React y AWS, así como arquitecturas MVC y en capas, APIs REST y bases de datos relacionales.",
+            personalDescription:"Estoy familiarizado en el desarrollo de aplicaciones web full-stack con arquitecturas MVC y/o Layered, APIs REST y bases de datos relacionales, utilizando tecnologías como JavaScript, Spring Boot, Hibernate y PostgreSQL.",
             technologies: "Tecnologías",
             projects: "Proyectos",
             repo:"Repositorio",
