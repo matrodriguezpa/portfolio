@@ -1,0 +1,73 @@
+
+{
+  "presentation": {
+    "en": {
+      "pageTitle": "Personal Portfolio",
+      "projectsTitle": "Projects",
+      "name": "Mateo Rodríguez Palacios",
+      "student": "Student | Backend Junior",
+      "university": "National University of Colombia",
+      "degree": "Computer & Systems Engineering",
+      "personalDescription": "My name is Mateo. I'm familiar with building desktop and full-stack web applications using Spring, React, and AWS, MVC and layered architectures, REST APIs, and relational databases.\n"
+    },
+    "es": {
+      "pageTitle": "Portafolio Personal",
+      "projectsTitle": "Proyectos",
+      "name": "Mateo Rodríguez Palacios",
+      "student": "Estudiante | Backend Junior",
+      "university": "Universidad Nacional de Colombia",
+      "degree": "Ingeniería de Sistemas y Computación",
+      "personalDescription": "Me llamo Mateo. Estoy familiarizado con la creación de aplicaciones de escritorio usando Java y aplicaciones web fullstack utilizando Spring, React y AWS, así como arquitecturas MVC y en capas, APIs REST y bases de datos relacionales."
+    }
+  },
+  "projects": [
+    {
+      "name": "azulcomics.com",
+      "url": "https://azulcomics.com",
+      "desc": {
+        "en": "A comics website built with React and Spring, hosted on Vercel and Render.",
+        "es": "Un sitio de cómics construido con React y Spring, alojado en Vercel y Render."
+      },
+      "tech": ["react", "spring", "vercel", "render"]
+    },
+    {
+      "name": "forfamili.org",
+      "url": "https://forfamili.org",
+      "desc": {
+        "en": "A web platform built with React and Python, using MySQL and hosted on Render.",
+        "es": "Una plataforma web construida con React y Python, usando MySQL y alojada en Render."
+      },
+      "tech": ["react", "python", "mysql", "render"]
+    },
+    {
+      "name": "promediosunal.github.io",
+      "url": "https://promediosunal.github.io/promediosunal/",
+      "desc": {
+        "en": "A grades calculator built purely with JavaScript, HTML, and CSS.",
+        "es": "Un calculador de calificaciones construido únicamente con JavaScript, HTML y CSS."
+      },
+      "tech": ["javascript"]
+    },
+    {
+      "name": "allspencer",
+      "url": "https://github.com/allspencer",
+      "desc": {
+        "en": "A desktop app built with Java, Hibernate, and SQLite.",
+        "es": "Una aplicación de escritorio construida con Java, Hibernate y SQLite."
+      },
+      "tech": ["java", "hibernate", "sqlite"]
+    }
+  ],
+  "tech": [
+    { "name": "react", "logo": "assets/images/logos/React.png" },
+    { "name": "spring", "logo": "assets/images/logos/Spring.png" },
+    { "name": "vercel", "logo": "assets/images/logos/Vercel.png" },
+    { "name": "render", "logo": "assets/images/logos/Render.png" },
+    { "name": "python", "logo": "assets/images/logos/Python.png" },
+    { "name": "mysql", "logo": "assets/images/logos/MySQL.png" },
+    { "name": "javascript", "logo": "assets/images/logos/JavaScript.png" },
+    { "name": "java", "logo": "assets/images/logos/Java.png" },
+    { "name": "hibernate", "logo": "assets/images/logos/Hibernate.png" },
+    { "name": "sqlite", "logo": "assets/images/logos/SQLite.png" }
+  ]
+}

@@ -1,22 +1,19 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <title>Mateo Porfolio</title>
+    <title>Mateo Portfolio</title>
 </head>
-
-<body onload="setLanguage('en')">
-
-<!-- Portfolio and for Language Selection -->
+<body>
+<!-- Header -->
 <div id="header">
     <h1 id="page-title"></h1>
     <div class="dropdown">
-        <!-- Agregado id="language" al botón -->
-        <button class="language" id="language">EN</button>
+        <button class="language" id="language-btn">EN</button>
         <div class="dropdown-content">
             <a href="#" onclick="setLanguage('en')">EN</a>
             <a href="#" onclick="setLanguage('es')">ES</a>
@@ -26,275 +23,36 @@
 
 <!-- Presentation Section -->
 <section id="presentation">
+    <img src="assets/images/Photo.png" alt="Your Photo" width="150" height="150">
     <h2 id="name"></h2>
-    <div>
-        <img src="assets/images/Photo.png" alt="Your Photo" width="150" height="150">
-        <p id="student"></p>
-        <p id="university"></p>
-        <p id="degree"></p>
-        <p><a href="https://github.com/matrodriguezpa">GitHub</a></p>
-        <p><a href="assets/HV_Mateo_Rodríguez_Palacios.pdf">CV</a></p>
-    </div>
+    <p id="student"></p>
+    <p id="university"></p>
+    <p id="degree"></p>
+
+    <p><a href="https://github.com/matrodriguezpa">GitHub</a></p>
+    <p><a href="assets/HV_Mateo_Rodríguez_Palacios.pdf">CV</a></p>
 </section>
 
 <!-- Personal Section -->
-<section id="personal">
+<section id="about-me">
     <h1 id="about-me"></h1>
     <p id="personal-description"></p>
-</section>
-
-<!-- Technologies Section -->
-<section id="technologies">
-    <h1 id="technologies-title"></h1>
-    <ul>
-        <li>
-            <a href="https://www.java.com" target="_blank">
-                <img src="assets/images/logos/Java.png" alt="Java Logo" width="50" height="50">Java
-            </a>
-        </li>
-        <li>
-            <a href="https://spring.io/" target="_blank">
-                <img src="assets/images/logos/Spring.png" alt="Spring Logo" width="50" height="50">Spring
-            </a>
-        </li>
-        <li>
-            <a href="http://www.ecmascript.org" target="_blank">
-                <img src="assets/images/logos/JavaScript.png" alt="Javascript Logo" width="50" height="50">JavaScript
-            </a>
-        </li>
-        <!--
-        <li>
-            <a href="https://nodejs.org" target="_blank">
-                <img src="assets/images/logos/Node.png" alt="Node Logo" width="50" height="50">Node
-            </a>
-        </li>
-        <li>
-            <a href="https://react.dev" target="_blank">
-                <img src="assets/images/logos/React.png" alt="React Logo" width="50" height="50">React
-            </a>
-        </li>-->
-
-        <li>
-            <a href="https://www.mysql.com" target="_blank">
-                <img src="assets/images/logos/MySQL.png" alt="MySQL Logo" width="50" height="50">MySQL
-            </a>
-        </li>
-        <li>
-            <a href="https://www.sqlite.org" target="_blank">
-                <img src="assets/images/logos/SQLite.png" alt="SQLite Logo" width="50" height="50">SQLite
-            </a>
-        </li>
-        <!--
-        <li>
-            <a href="http://aws.amazon.com" target="_blank">
-                <img src="assets/images/logos/AWS.png" alt="AWS Logo" width="50" height="50">Amazon Web Services
-            </a>
-        </li>
-        -->
-    </ul>
 </section>
 
 <!-- Projects Section -->
 <section id="projects">
     <h1 id="projects-title"></h1>
-
-    <div>
-        <button>Web</button>
-        <button>Desktop</button>
-    </div>
-
-    <ul>
-        <!-- Web-->
-        <li>
-            <a href="https://azulcomics.com" target="_blank">
-                <img src="assets/images/previews/OneSpencer.png" alt="Azul Comics Preview">
-            </a>
-            <div class="project-tech">
-
-                <div class="links">
-                    <a id="azul-comics" href="http://azulcomics.com" target="_blank"></a>
-                    <a class="repo" href="https://github.com/matrodriguezpa/azul-comics" target="_blank"></a>
-                </div>
-
-                <p id="azul-comics-desc"></p>
-                <a href="https://spring.io" target="_blank">
-                    <img src="assets/images/logos/Spring.png" alt="Spring Logo" width="50" height="50">
-                </a>
-                <a href="https://nodejs.org" target="_blank">
-                    <img src="assets/images/logos/Node.png" alt="Node Logo" width="50" height="50">
-                </a>
-                <a href="https://react.dev" target="_blank">
-                    <img src="assets/images/logos/React.png" alt="React Logo" width="50" height="50">
-                </a>
-                <a href="http://aws.amazon.com" target="_blank">
-                    <img src="assets/images/logos/AWS.png" alt="AWS Logo" width="50" height="50">
-                </a>
-                <a href="https://maven.apache.org" target="_blank">
-                    <img src="assets/images/logos/Maven.png" alt="Maven Logo" width="50" height="50">
-                </a>
-                <a href="https://www.npmjs.com" target="_blank">
-                    <img src="assets/images/logos/NPM.png" alt="NPM Logo" width="50" height="50">
-                </a>
-            </div>
-        </li>
-        <li>
-            <a href="https://promediosunal.github.io/promediosunal/" target="_blank">
-                <img src="assets/images/previews/PromediosUNAL.png" alt="Promedios unal Preview">
-            </a>
-            <div class="project-tech">
-                <div class="links">
-                    <a id="promedios-unal" href="https://promediosunal.github.io/promediosunal/" target="_blank"></a>
-                    <a class="repo" href="https://github.com/promediosunal/promediosunal" target="_blank"></a>
-                    <p id="promedios-unal-desc"></p>
-                </div>
-                <a href="http://www.ecmascript.org" target="_blank">
-                    <img src="assets/images/logos/JavaScript.png" alt="Javascript Logo" width="50" height="50">
-                </a>
-                <a href="#" target="_blank">
-                    <img src="assets/images/logos/GitHub.png" alt="Git Hub pages Logo" width="50" height="50">
-                </a>
-            </div>
-        </li>
-        <li>
-            <a href="https://promediosunal.github.io/promediosunal/" target="_blank">
-                <img src="assets/images/previews/PromediosUNAL.png" alt="Promedios unal Preview">
-            </a>***Comic search***
-            <div class="project-tech">
-                <div class="links">
-                    <a id="promedios-unal" href="https://promediosunal.github.io/promediosunal/" target="_blank"></a>
-                    <a class="repo" href="https://github.com/promediosunal/promediosunal" target="_blank"></a>
-                    <p id="promedios-unal-desc"></p>
-                </div>
-                <a href="http://www.ecmascript.org" target="_blank">
-                    <img src="assets/images/logos/JavaScript.png" alt="Javascript Logo" width="50" height="50">
-                </a>
-                <a href="#" target="_blank">
-                    <img src="assets/images/logos/GitHub.png" alt="Git Hub pages Logo" width="50" height="50">
-                </a>
-            </div>
-        </li>
-
-        <!-- desktop-->
-        <li>
-            <a href="https://azulcomics.com" target="_blank">
-                <img src="assets/images/previews/AzulComics.png" alt="Azul Comics Preview">
-            </a>***sistema transporte***
-            <div class="project-tech">
-
-                <div class="links">
-                    <a id="azul-comics" href="http://azulcomics.com" target="_blank"></a>
-                    <a class="repo" href="https://github.com/matrodriguezpa/azul-comics" target="_blank"></a>
-                </div>
-
-                <p id="azul-comics-desc"></p>
-                <a href="https://spring.io" target="_blank">
-                    <img src="assets/images/logos/Spring.png" alt="Spring Logo" width="50" height="50">
-                </a>
-                <a href="https://nodejs.org" target="_blank">
-                    <img src="assets/images/logos/Node.png" alt="Node Logo" width="50" height="50">
-                </a>
-                <a href="https://react.dev" target="_blank">
-                    <img src="assets/images/logos/React.png" alt="React Logo" width="50" height="50">
-                </a>
-                <a href="http://aws.amazon.com" target="_blank">
-                    <img src="assets/images/logos/AWS.png" alt="AWS Logo" width="50" height="50">
-                </a>
-                <a href="https://maven.apache.org" target="_blank">
-                    <img src="assets/images/logos/Maven.png" alt="Maven Logo" width="50" height="50">
-                </a>
-                <a href="https://www.npmjs.com" target="_blank">
-                    <img src="assets/images/logos/NPM.png" alt="NPM Logo" width="50" height="50">
-                </a>
-            </div>
-        </li>
-        <li>
-            <a href="https://github.com/matrodriguezpa/one-spencer" target="_blank">
-                <img src="assets/images/previews/OneSpencer.png" alt="One Spencer Preview">
-            </a>
-            <div class="project-tech">
-
-                <div class="links">
-                    <a id="one-spencer" href="https://github.com/matrodriguezpa/one-spencer" target="_blank"></a>
-                    <a class="repo" href="https://github.com/matrodriguezpa/one-spencer" target="_blank"></a>
-                    <p id="one-spencer-desc"></p>
-                </div>
-
-                <a href="https://www.java.com" target="_blank">
-                    <img src="assets/images/logos/Java.png" alt="Java Logo" width="50" height="50"></a>
-                <a href="https://www.sqlite.org" target="_blank">
-                    <img src="assets/images/logos/SQLite.png" alt="SQLite Logo" width="50" height="50">
-                </a>
-                <a href="https://maven.apache.org" target="_blank">
-                    <img src="assets/images/logos/Maven.png" alt="Maven Logo" width="50" height="50">
-                </a>
-            </div>
-        </li>
-        <li>
-            <a href="https://github.com/matrodriguezpa/one-spencer" target="_blank">
-                <img src="assets/images/previews/OneSpencer.png" alt="One Spencer Preview">
-            </a>***calculadora****
-            <div class="project-tech">
-
-                <div class="links">
-                    <a id="one-spencer" href="https://github.com/matrodriguezpa/one-spencer" target="_blank"></a>
-                    <a class="repo" href="https://github.com/matrodriguezpa/one-spencer" target="_blank"></a>
-                    <p id="one-spencer-desc"></p>
-                </div>
-
-                <a href="https://www.java.com" target="_blank">
-                    <img src="assets/images/logos/Java.png" alt="Java Logo" width="50" height="50"></a>
-                <a href="https://www.sqlite.org" target="_blank">
-                    <img src="assets/images/logos/SQLite.png" alt="SQLite Logo" width="50" height="50">
-                </a>
-                <a href="https://maven.apache.org" target="_blank">
-                    <img src="assets/images/logos/Maven.png" alt="Maven Logo" width="50" height="50">
-                </a>
-            </div>
-        </li>
-        <li>
-            <a href="https://promediosunal.github.io/promediosunal/" target="_blank">
-                <img src="assets/images/previews/PromediosUNAL.png" alt="Promedios unal Preview">
-            </a>***naghts and crosses***
-            <div class="project-tech">
-                <div class="links">
-                    <a id="promedios-unal" href="https://promediosunal.github.io/promediosunal/" target="_blank"></a>
-                    <a class="repo" href="https://github.com/promediosunal/promediosunal" target="_blank"></a>
-                    <p id="promedios-unal-desc"></p>
-                </div>
-                <a href="http://www.ecmascript.org" target="_blank">
-                    <img src="assets/images/logos/JavaScript.png" alt="Javascript Logo" width="50" height="50">
-                </a>
-                <a href="#" target="_blank">
-                    <img src="assets/images/logos/GitHub.png" alt="Git Hub pages Logo" width="50" height="50">
-                </a>
-            </div>
-        </li>
-        <li>
-            <a href="https://github.com/matrodriguezpa/one-spencer" target="_blank">
-                <img src="assets/images/previews/OneSpencer.png" alt="One Spencer Preview">
-            </a>***Suelos carga***
-            <div class="project-tech">
-
-                <div class="links">
-                    <a id="one-spencer" href="https://github.com/matrodriguezpa/one-spencer" target="_blank"></a>
-                    <a class="repo" href="https://github.com/matrodriguezpa/one-spencer" target="_blank"></a>
-                    <p id="one-spencer-desc"></p>
-                </div>
-
-                <a href="https://www.java.com" target="_blank">
-                    <img src="assets/images/logos/Java.png" alt="Java Logo" width="50" height="50"></a>
-                <a href="https://www.sqlite.org" target="_blank">
-                    <img src="assets/images/logos/SQLite.png" alt="SQLite Logo" width="50" height="50">
-                </a>
-                <a href="https://maven.apache.org" target="_blank">
-                    <img src="assets/images/logos/Maven.png" alt="Maven Logo" width="50" height="50">
-                </a>
-            </div>
-        </li>
-    </ul>
-
+    <div id="tag-filters"></div>
+    <ul id="projects-list"></ul>
 </section>
 
+<script>
+    // Load data.json and initialize
+    fetch('data.json')
+        .then(response => response.json())
+        .then(data => initPortfolio(data));
+</script>
 </body>
-
 </html>
+
+
