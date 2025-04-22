@@ -4,6 +4,7 @@
     "en": {
       "pageTitle": "Personal Portfolio",
       "projectsTitle": "Projects",
+      "aboutTitle": "About me",
       "name": "Mateo Rodríguez Palacios",
       "student": "Student | Backend Junior",
       "university": "National University of Colombia",
@@ -13,6 +14,7 @@
     "es": {
       "pageTitle": "Portafolio Personal",
       "projectsTitle": "Proyectos",
+      "aboutTitle": "Sobre mi",
       "name": "Mateo Rodríguez Palacios",
       "student": "Estudiante | Backend Junior",
       "university": "Universidad Nacional de Colombia",
@@ -22,8 +24,11 @@
   },
   "projects": [
     {
+      "id": "azulcomics-com",
       "name": "azulcomics.com",
       "url": "https://azulcomics.com",
+      "repo": "https://github.com/azulcomics/website",
+      "previewImage": "assets/images/previews/AzulComics.png",
       "desc": {
         "en": "A comics website built with React and Spring, hosted on Vercel and Render.",
         "es": "Un sitio de cómics construido con React y Spring, alojado en Vercel y Render."
@@ -31,8 +36,11 @@
       "tech": ["react", "spring", "vercel", "render"]
     },
     {
+      "id": "forfamili-org",
       "name": "forfamili.org",
       "url": "https://forfamili.org",
+      "repo": "https://github.com/forfamili/forfamili.org",
+      "previewImage": "assets/images/previews/ForFamili.png",
       "desc": {
         "en": "A web platform built with React and Python, using MySQL and hosted on Render.",
         "es": "Una plataforma web construida con React y Python, usando MySQL y alojada en Render."
@@ -40,8 +48,11 @@
       "tech": ["react", "python", "mysql", "render"]
     },
     {
+      "id": "promediosunal-github-io",
       "name": "promediosunal.github.io",
       "url": "https://promediosunal.github.io/promediosunal/",
+      "repo": "https://github.com/promediosunal/promediosunal",
+      "previewImage": "assets/images/previews/PromediosUNAL.png",
       "desc": {
         "en": "A grades calculator built purely with JavaScript, HTML, and CSS.",
         "es": "Un calculador de calificaciones construido únicamente con JavaScript, HTML y CSS."
@@ -49,8 +60,11 @@
       "tech": ["javascript"]
     },
     {
+      "id": "allspencer",
       "name": "allspencer",
       "url": "https://github.com/allspencer",
+      "repo": "https://github.com/allspencer/allspencer",
+      "previewImage": "assets/images/previews/OneSpencer.png",
       "desc": {
         "en": "A desktop app built with Java, Hibernate, and SQLite.",
         "es": "Una aplicación de escritorio construida con Java, Hibernate y SQLite."

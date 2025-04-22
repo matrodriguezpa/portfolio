@@ -25,12 +25,8 @@ a:hover {
     text-decoration: underline;
 }
 
-p{
-    max-width: 400px;
-}
-
 /* Container */
-#presentation, #technologies, #projects, #personal{
+.block{
     margin: 20px auto;
     padding: 20px;
     max-width: 800px;
@@ -43,6 +39,10 @@ p{
     justify-content: space-between;
     align-items: center;
     margin: 15px;
+}
+
+title{
+    color: black;
 }
 
 
@@ -104,11 +104,12 @@ p{
 #projects button {
     padding: 12px 16px;
     border: none;
-    width: 80px;
-    background-color: #f4a460;
-    font-family: Agency FB, serif;
-    font-size: medium;
     color: #6e1e00;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    margin: 5px 10px;
+    background: antiquewhite;
 }
 
 #projects button:hover {
@@ -138,8 +139,14 @@ p{
 }
 
 #projects div {
-    max-width: 600px;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#projects button:hover {
+    background-color: #da8641;
+    cursor: pointer;
 }
 
 #projects li a {
@@ -148,11 +155,6 @@ p{
     font-size: 18px;
 }
 
-#projects p {
-    margin: 15px 0;
-    font-size: 16px;
-    text-align: justify;
-}
 
 /* Estilos para el menú desplegable */
 .dropdown {

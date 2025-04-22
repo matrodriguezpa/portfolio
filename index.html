@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
     <title>Mateo Portfolio</title>
 </head>
 <body>
@@ -22,9 +23,9 @@
 </div>
 
 <!-- Presentation Section -->
-<section id="presentation">
+<section id="presentation" class="block">
     <img src="assets/images/Photo.png" alt="Your Photo" width="150" height="150">
-    <h2 id="name"></h2>
+    <h1 id="name"></h1>
     <p id="student"></p>
     <p id="university"></p>
     <p id="degree"></p>
@@ -34,24 +35,17 @@
 </section>
 
 <!-- Personal Section -->
-<section id="about-me">
+<section id="about" class="block">
     <h1 id="about-me"></h1>
     <p id="personal-description"></p>
 </section>
 
 <!-- Projects Section -->
-<section id="projects">
+<section id="projects" class="block">
     <h1 id="projects-title"></h1>
     <div id="tag-filters"></div>
     <ul id="projects-list"></ul>
 </section>
-
-<script>
-    // Load data.json and initialize
-    fetch('data.json')
-        .then(response => response.json())
-        .then(data => initPortfolio(data));
-</script>
 </body>
 </html>
 

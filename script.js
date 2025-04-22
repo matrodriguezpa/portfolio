@@ -1,4 +1,7 @@
 let currentLang = 'en';
+fetch('data.json')
+    .then(response => response.json())
+    .then(data => initPortfolio(data));
 
 function initPortfolio(data) {
     window.portfolioData = data;
@@ -10,16 +13,18 @@ function initPortfolio(data) {
 function setLanguage(lang) {
     currentLang = lang;
     const info = portfolioData.presentation[lang];
+    //Header
     document.getElementById('page-title').textContent = info.pageTitle;
     document.getElementById('language-btn').textContent = lang.toUpperCase();
     document.getElementById('projects-title').textContent = info.projectsTitle;
-
+    //Presentation section
     document.getElementById('name').textContent = info.name;
     document.getElementById('student').textContent = info.student;
     document.getElementById('university').textContent = info.university;
     document.getElementById('degree').textContent = info.degree;
+    //About section
+    document.getElementById('about-me').textContent = info.aboutTitle;
     document.getElementById('personal-description').textContent = info.personalDescription;
-
 }
 
 function getUniqueTags() {
@@ -28,7 +33,7 @@ function getUniqueTags() {
 
 function getTechDetails(techNames) {
     return techNames.map(name => {
-        return portfolioData.tech.find(t => t.name === name) || { name: name, logo: '' };
+        return portfolioData.tech.find(t => t.name === name) || {name: name, logo: ''};
     });
 }
 
@@ -51,48 +56,82 @@ function renderTagFilters() {
         img.width = 24;
         img.height = 24;
 
+        const textWrapper = document.createElement('div');
+        textWrapper.className = 'button-text'; // or any class name you prefer
+        textWrapper.textContent = t.name;
+
         btn.appendChild(img);
-        btn.appendChild(document.createTextNode(t.name));
+        btn.appendChild(textWrapper);
         container.appendChild(btn);
     });
 }
-
+// 2. renderProjects.js
 function renderProjects(filterTag) {
-    const list = document.getElementById('projects-list');
-    list.innerHTML = '';
+    const list = document.getElementById("projects-list");
+    list.innerHTML = "";
 
     portfolioData.projects
-        .filter(p => !filterTag || p.tech.includes(filterTag))
-        .forEach(p => {
-            const li = document.createElement('li');
-            const a = document.createElement('a');
-            a.href = p.url;
-            a.target = '_blank';
-            a.textContent = p.name;
-            li.appendChild(a);
+        .filter((p) => !filterTag || p.tech.includes(filterTag))
+        .forEach((p) => {
+            // <li>
+            const li = document.createElement("li");
 
-            const desc = document.createElement('p');
+            // — Preview image link
+            const previewLink = document.createElement("a");
+            previewLink.href = p.url;
+            previewLink.target = "_blank";
+
+            const previewImg = document.createElement("img");
+            previewImg.src = p.previewImage;
+            previewImg.alt = `${p.name} Preview`;
+            previewLink.appendChild(previewImg);
+            li.appendChild(previewLink);
+
+            // — project-tech wrapper
+            const techDiv = document.createElement("div");
+            techDiv.className = "project-tech";
+
+            // — links (project URL, repo, desc)
+            const linksDiv = document.createElement("div");
+            linksDiv.className = "links";
+
+            const projectLink = document.createElement("a");
+            // normalize id: alphanumeric + dashes
+            const safeId = p.id || p.name.toLowerCase().replace(/\W+/g, "-");
+            projectLink.id = safeId;
+            projectLink.href = p.url;
+            projectLink.target = "_blank";
+            projectLink.textContent = new URL(p.url).host;
+            linksDiv.appendChild(projectLink);
+
+            const repoLink = document.createElement("a");
+            repoLink.className = "repo";
+            repoLink.href = p.repo;
+            repoLink.target = "_blank";
+            repoLink.textContent = "Repo";
+            linksDiv.appendChild(repoLink);
+
+            const desc = document.createElement("p");
+            desc.id = `${safeId}-desc`;
             desc.textContent = p.desc[currentLang];
-            li.appendChild(desc);
+            linksDiv.appendChild(desc);
 
-            const techDiv = document.createElement('div');
-            techDiv.className = 'project-tech';
+            techDiv.appendChild(linksDiv);
 
-            // Mapea cada string a objeto con nombre y logo
-            getTechDetails(p.tech).forEach(t => {
-                const span = document.createElement('span');
+            // — tech logos (each linking to the tech’s homepage)
+            getTechDetails(p.tech).forEach((t) => {
+                const aTech = document.createElement("a");
+                aTech.href = t.url;
+                aTech.target = "_blank";
 
-                const img = document.createElement('img');
-                img.src = t.logo;
-                img.alt = `${t.name} logo`;
-                img.width = 24;
-                img.height = 24;
-                span.appendChild(img);
+                const imgTech = document.createElement("img");
+                imgTech.src = t.logo;
+                imgTech.alt = `${t.name} Logo`;
+                imgTech.width = 50;
+                imgTech.height = 50;
 
-                const text = document.createTextNode(t.name);
-                span.appendChild(text);
-
-                techDiv.appendChild(span);
+                aTech.appendChild(imgTech);
+                techDiv.appendChild(aTech);
             });
 
             li.appendChild(techDiv);
