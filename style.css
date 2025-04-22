@@ -114,6 +114,7 @@ title{
 
 #projects button:hover {
     background-color: #da8641;
+    color: white;
 }
 
 #projects ul {
@@ -183,11 +184,13 @@ title{
 
 .dropdown:hover .dropdown-content {
     display: block;
+
 }
 
 .dropdown:hover .language {
     background-color: sandybrown;
     color: white;
+    cursor: pointer;
 }
 
 .language {
