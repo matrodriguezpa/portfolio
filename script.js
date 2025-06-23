@@ -24,7 +24,7 @@ function setLanguage(lang) {
     document.getElementById('degree').textContent = info.degree;
     //About section
     document.getElementById('about-me').textContent = info.aboutTitle;
-    document.getElementById('personal-description').textContent = info.personalDescription;
+    document.getElementById('personal-description').innerHTML = info.personalDescription.replace(/\n/g, '<br>');
 }
 
 function getUniqueTags() {
@@ -101,14 +101,14 @@ function renderProjects(filterTag) {
             projectLink.id = safeId;
             projectLink.href = p.url;
             projectLink.target = "_blank";
-            projectLink.textContent = new URL(p.url).host;
+            projectLink.textContent = p.name; //p.url.replace(/^https?:\/\//, "");
             linksDiv.appendChild(projectLink);
 
             const repoLink = document.createElement("a");
             repoLink.className = "repo";
             repoLink.href = p.repo;
             repoLink.target = "_blank";
-            repoLink.textContent = "Repo";
+            repoLink.textContent = "source code";
             linksDiv.appendChild(repoLink);
 
             const desc = document.createElement("p");

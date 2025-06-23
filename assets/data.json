@@ -1,4 +1,3 @@
-
 {
   "presentation": {
     "en": {
@@ -9,17 +8,17 @@
       "student": "Student | Backend Junior",
       "university": "National University of Colombia",
       "degree": "Computer & Systems Engineering",
-      "personalDescription": "My name is Mateo. I'm familiar with building desktop and full-stack web applications using Spring, React, and AWS, MVC and layered architectures, REST APIs, and relational databases.\n"
+      "personalDescription": "My name is Mateo, I'm a Computer & Systems Engineering student with a strong interest in backend development. I'm mostly familiar building:\n• 💻 Desktop applications using Java\n• 🌐 Full-stack web apps with Spring & React\n• 🧱 MVC and layered architectures\n• 🔗 RESTful APIs\n• 🗄️ Relational databases"
     },
     "es": {
       "pageTitle": "Portafolio Personal",
       "projectsTitle": "Proyectos",
-      "aboutTitle": "Sobre mi",
+      "aboutTitle": "Sobre mí",
       "name": "Mateo Rodríguez Palacios",
       "student": "Estudiante | Backend Junior",
       "university": "Universidad Nacional de Colombia",
       "degree": "Ingeniería de Sistemas y Computación",
-      "personalDescription": "Me llamo Mateo. Estoy familiarizado con la creación de aplicaciones de escritorio usando Java y aplicaciones web fullstack utilizando Spring, React y AWS, así como arquitecturas MVC y en capas, APIs REST y bases de datos relacionales."
+      "personalDescription": "Mi nombre es Mateo, soy estudiante de Ingeniería de Sistemas interesado en el desarrollo backend. Estoy sobretodo familiarizado con:\n• 💻 Aplicaciones de escritorio en Java\n• 🌐 Aplicaciones web fullstack con Spring y React\n• 🧱 Arquitecturas MVC y en capas\n• 🔗 APIs REST\n• 🗄️ Bases de datos relacionales"
     }
   },
   "projects": [
@@ -27,61 +26,123 @@
       "id": "azulcomics-com",
       "name": "azulcomics.com",
       "url": "https://azulcomics.com",
-      "repo": "https://github.com/azulcomics/website",
+      "repo": "https://github.com/matrodriguezpa/azul-comics",
       "previewImage": "assets/images/previews/AzulComics.png",
       "desc": {
         "en": "A comics website built with React and Spring, hosted on Vercel and Render.",
         "es": "Un sitio de cómics construido con React y Spring, alojado en Vercel y Render."
       },
-      "tech": ["react", "spring", "vercel", "render"]
+      "tech": [
+        "react",
+        "spring",
+        "vercel",
+        "render"
+      ]
     },
     {
       "id": "forfamili-org",
       "name": "forfamili.org",
       "url": "https://forfamili.org",
-      "repo": "https://github.com/forfamili/forfamili.org",
+      "repo": "https://github.com/matrodriguezpa/forfamili",
       "previewImage": "assets/images/previews/ForFamili.png",
       "desc": {
-        "en": "A web platform built with React and Python, using MySQL and hosted on Render.",
-        "es": "Una plataforma web construida con React y Python, usando MySQL y alojada en Render."
+        "en": "A simple blog built with the netlyfi CMS.",
+        "es": "Un blog simple construido con el CMS de netlyfi ."
       },
-      "tech": ["react", "python", "mysql", "render"]
+      "tech": [
+        "javascript",
+        "netlify"
+      ]
     },
     {
       "id": "promediosunal-github-io",
       "name": "promediosunal.github.io",
-      "url": "https://promediosunal.github.io/promediosunal/",
+      "url": "https://promediosunal.github.io/promediosunal",
       "repo": "https://github.com/promediosunal/promediosunal",
       "previewImage": "assets/images/previews/PromediosUNAL.png",
       "desc": {
-        "en": "A grades calculator built purely with JavaScript, HTML, and CSS.",
-        "es": "Un calculador de calificaciones construido únicamente con JavaScript, HTML y CSS."
+        "en": "A grades calculator page built with JavaScript.",
+        "es": "Un calculador de calificaciones construido con JavaScript."
       },
-      "tech": ["javascript"]
+      "tech": [
+        "javascript"
+      ]
     },
     {
-      "id": "allspencer",
-      "name": "allspencer",
-      "url": "https://github.com/allspencer",
+      "id": "receipt-manager",
+      "name": "receipt manager",
+      "url": "https://matrodriguezpa.github.io/receipt-manager",
       "repo": "https://github.com/allspencer/allspencer",
       "previewImage": "assets/images/previews/OneSpencer.png",
       "desc": {
-        "en": "A desktop app built with Java, Hibernate, and SQLite.",
-        "es": "Una aplicación de escritorio construida con Java, Hibernate y SQLite."
+        "en": "A desktop app made with Java, Hibernate, and SQLite.",
+        "es": "Una aplicación de escritorio hecha con Java, Hibernate y SQLite."
       },
-      "tech": ["java", "hibernate", "sqlite"]
+      "tech": [
+        "java",
+        "hibernate",
+        "sqlite"
+      ]
+    },
+    {
+      "id": "calculator",
+      "name": "calculator",
+      "url": "",
+      "repo": "https://github.com/allspencer/allspencer",
+      "previewImage": "assets/images/previews/Calculator.png",
+      "desc": {
+        "en": "Calculator with Java.",
+        "es": "calculadora en Java."
+      },
+      "tech": [
+        "java"
+      ]
     }
   ],
   "tech": [
-    { "name": "react", "logo": "assets/images/logos/React.png" },
-    { "name": "spring", "logo": "assets/images/logos/Spring.png" },
-    { "name": "vercel", "logo": "assets/images/logos/Vercel.png" },
-    { "name": "render", "logo": "assets/images/logos/Render.png" },
-    { "name": "python", "logo": "assets/images/logos/Python.png" },
-    { "name": "mysql", "logo": "assets/images/logos/MySQL.png" },
-    { "name": "javascript", "logo": "assets/images/logos/JavaScript.png" },
-    { "name": "java", "logo": "assets/images/logos/Java.png" },
-    { "name": "hibernate", "logo": "assets/images/logos/Hibernate.png" },
-    { "name": "sqlite", "logo": "assets/images/logos/SQLite.png" }
+    {
+      "name": "react",
+      "logo": "assets/images/logos/React.png"
+    },
+    {
+      "name": "spring",
+      "logo": "assets/images/logos/Spring.png"
+    },
+    {
+      "name": "vercel",
+      "logo": "assets/images/logos/Vercel.png"
+    },
+    {
+      "name": "render",
+      "logo": "assets/images/logos/Render.png"
+    },
+    {
+      "name": "python",
+      "logo": "assets/images/logos/Python.png"
+    },
+    {
+      "name": "mysql",
+      "logo": "assets/images/logos/MySQL.png"
+    },
+    {
+      "name": "javascript",
+      "logo": "assets/images/logos/JavaScript.png"
+    },
+    {
+      "name": "java",
+      "logo": "assets/images/logos/Java.png"
+    },
+    {
+      "name": "hibernate",
+      "logo": "assets/images/logos/Hibernate.png"
+    },
+    {
+      "name": "sqlite",
+      "logo": "assets/images/logos/SQLite.png"
+    },
+    {
+      "name": "netlify",
+      "logo": "assets/images/logos/Netlify.png"
+    }
   ]
 }
