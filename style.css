@@ -28,7 +28,7 @@ a:hover {
 /* Container */
 .block{
     margin: 20px auto;
-    padding: 20px;
+    padding: 20px 50px;
     max-width: 800px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
@@ -129,7 +129,6 @@ title{
     display: inline-flex;
     margin-bottom: 20px;
     width: 100%;
-    border-bottom: 1px solid sandybrown;
     padding-bottom: 30px;
     align-items: center;
 }
