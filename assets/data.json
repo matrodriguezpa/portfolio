@@ -35,8 +35,7 @@
       "tech": [
         "react",
         "spring",
-        "vercel",
-        "render"
+        "mysql"
       ]
     },
     {
@@ -80,7 +79,6 @@
       },
       "tech": [
         "java",
-        "hibernate",
         "sqlite"
       ]
     },
@@ -101,20 +99,12 @@
   ],
   "tech": [
     {
-      "name": "react",
-      "logo": "assets/images/logos/React.png"
+      "name": "java",
+      "logo": "assets/images/logos/Java.png"
     },
     {
-      "name": "spring",
-      "logo": "assets/images/logos/Spring.png"
-    },
-    {
-      "name": "vercel",
-      "logo": "assets/images/logos/Vercel.png"
-    },
-    {
-      "name": "render",
-      "logo": "assets/images/logos/Render.png"
+      "name": "javascript",
+      "logo": "assets/images/logos/JavaScript.png"
     },
     {
       "name": "python",
@@ -125,20 +115,16 @@
       "logo": "assets/images/logos/MySQL.png"
     },
     {
-      "name": "javascript",
-      "logo": "assets/images/logos/JavaScript.png"
-    },
-    {
-      "name": "java",
-      "logo": "assets/images/logos/Java.png"
-    },
-    {
-      "name": "hibernate",
-      "logo": "assets/images/logos/Hibernate.png"
-    },
-    {
       "name": "sqlite",
       "logo": "assets/images/logos/SQLite.png"
+    },
+    {
+      "name": "react",
+      "logo": "assets/images/logos/React.png"
+    },
+    {
+      "name": "spring",
+      "logo": "assets/images/logos/Spring.png"
     },
     {
       "name": "netlify",
