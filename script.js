@@ -121,7 +121,6 @@ function renderProjects(filterTag) {
             // — tech logos (each linking to the tech’s homepage)
             getTechDetails(p.tech).forEach((t) => {
                 const aTech = document.createElement("a");
-                aTech.href = t.url;
                 aTech.target = "_blank";
 
                 const imgTech = document.createElement("img");

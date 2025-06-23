@@ -71,7 +71,7 @@
       "id": "receipt-manager",
       "name": "receipt manager",
       "url": "https://matrodriguezpa.github.io/receipt-manager",
-      "repo": "https://github.com/allspencer/allspencer",
+      "repo": "https://github.com/matrodriguezpa/receipt-manager",
       "previewImage": "assets/images/previews/OneSpencer.png",
       "desc": {
         "en": "A desktop app made with Java, Hibernate, and SQLite.",
@@ -85,8 +85,8 @@
     {
       "id": "calculator",
       "name": "calculator",
-      "url": "",
-      "repo": "https://github.com/allspencer/allspencer",
+      "url": "https://github.com/matrodriguezpa/calculator/releases/tag/download",
+      "repo": "https://github.com/matrodriguezpa/calculator",
       "previewImage": "assets/images/previews/Calculator.png",
       "desc": {
         "en": "Calculator with Java.",
