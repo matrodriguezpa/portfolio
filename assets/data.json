@@ -8,7 +8,7 @@
       "student": "Student | Backend Junior",
       "university": "National University of Colombia",
       "degree": "Computer & Systems Engineering",
-      "personalDescription": "My name is Mateo, I'm a Computer & Systems Engineering student interested in backend development. I'm mostly familiar building:\n• 💻 Desktop applications using Java\n• 🌐 Full-stack web apps with Spring & React\n• 🧱 MVC and layered architectures\n• 🔗 RESTful APIs\n• 🗄️ Relational databases"
+      "personalDescription": "My name is Mateo, I'm a Computer & Systems Engineering student interested in backend development. I'm mostly familiar building:\n• 📊 Data structures\n• 💻 Java applications\n• 🌐 Full‑stack web apps with Spring & React\n• 🛠️ CMS platforms like Netlify\n• 🧱 MVC and layered architectures\n• 🔗 RESTful APIs\n• 🗄️ Relational databases"
     },
     "es": {
       "pageTitle": "Portafolio Personal",
@@ -18,7 +18,7 @@
       "student": "Estudiante | Backend Junior",
       "university": "Universidad Nacional de Colombia",
       "degree": "Ingeniería de Sistemas y Computación",
-      "personalDescription": "Mi nombre es Mateo, soy estudiante de Ingeniería de Sistemas interesado en el desarrollo backend. Estoy sobretodo familiarizado con:\n• 💻 Aplicaciones de escritorio en Java\n• 🌐 Aplicaciones web fullstack con Spring y React\n• 🧱 Arquitecturas MVC y en capas\n• 🔗 APIs REST\n• 🗄️ Bases de datos relacionales"
+      "personalDescription": "Mi nombre es Mateo, soy estudiante de Ingeniería de Sistemas interesado en el desarrollo backend. Estoy sobretodo familiarizado con:\n• 📊 Estructuras de datos\n• 💻 Aplicaciones en Java\n• 🌐 Aplicaciones web full‑stack con Spring y React\n• 🛠️ CMS como Netlify\n• 🧱 Arquitecturas MVC y en capas\n• 🔗 APIs REST\n• 🗄️ Bases de datos relacionales"
     }
   },
   "projects": [
